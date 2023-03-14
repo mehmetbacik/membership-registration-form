@@ -1,2 +1,2 @@
 # membership-registration-form
-Coding of users app with React, Formik, Yup, Html, Css
+Coding of membership-registration-form with React, Formik, Yup, Html, Css
