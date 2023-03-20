@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestionsContent() {
+function PageContent() {
     return (
         <div className="questions__content">
             <span>Frequently Asked Questions</span>
@@ -9,4 +9,4 @@ function QuestionsContent() {
     )
 }
 
-export default QuestionsContent;
+export default PageContent;

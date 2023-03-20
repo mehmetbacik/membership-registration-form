@@ -1,11 +1,11 @@
 import './App.css';
 import MemberRegistration from './components/MemberRegistration';
-import QuestionsContent from './components/QuestionsContent';
+import PageContent from './components/PageContent';
 
 function App() {
   return (
     <div className="App">
-        <QuestionsContent />
+        <PageContent />
         <MemberRegistration />
     </div>
   );
