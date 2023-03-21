@@ -1,45 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --app-font: 'Poppins', sans-serif;
+    --white: hsl(0deg 0% 100%);
+    --black: hsl(0deg 0% 5%);
+    --dark-blue: hsl(249, 10%, 26%) ;
+    --grayish-blue: hsl(246, 25%, 77%);
+    --blue: hsl(248, 32%, 49%);
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%); 
+    --gray: hsl(230.77deg 15.66% 83.73%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--app-font);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.member__registration {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .member__registration code {
   display: none;
 }
 
+.page__content {
+  margin-top:25px;
+  margin-bottom: 25px;
+}
 
 .tabs {
-	display: flex;
-	flex-wrap: wrap; 
-}
-.tabs label {
-	order: 1; 
-	display: block;
-	margin-right: 0.2rem;
-	cursor: pointer;
-  transition: ease 0.2s;
-}
-.tabs .tab {
-  order: 99; 
-  flex-grow: 1;
-	width: 100%;
-	display: none;
-}
-.tabs input[type="radio"] {
-	display: none;
-}
-.tabs input[type="radio"]:checked + label {
-	background: #fff;
-}
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 45em) {
-  .tabs .tab,
-  .tabs label {
-    order: initial;
-  }
-  .tabs label {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 0.2rem;
-  }
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
 }
 
+.tabs__radio {
+  display: none;
+}
 
+.tabs__content {
+  order: 1;
+  width: 100%;
+  display: none;
+}
+
+.tabs__radio:checked + .tabs__label {
+  font-weight: bold;
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+}

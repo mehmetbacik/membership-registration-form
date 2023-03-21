@@ -5,8 +5,16 @@ import PageContent from './components/PageContent';
 function App() {
   return (
     <div className="App">
-        <PageContent />
-        <MemberRegistration />
+        <div className='container'>
+          <div className='row'>
+            <div className='col-12'>
+              <PageContent />
+            </div>
+            <div className='col-12'>
+              <MemberRegistration />
+            </div>
+          </div>
+        </div>
     </div>
   );
 }
