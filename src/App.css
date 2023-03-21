@@ -33,43 +33,52 @@ html, body {
 .member__registration {
   margin-top: 25px;
   margin-bottom: 25px;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 50px;
 }
 
 .member__registration code {
   display: none;
 }
 
+
+
 .page__content {
   margin-top:25px;
   margin-bottom: 25px;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 50px;
 }
 
-.tabs {
+.page__content .tabs {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.tabs__label {
+.page__content .tabs__label {
   padding: 10px 16px;
   cursor: pointer;
 }
 
-.tabs__radio {
+.page__content .tabs__radio {
   display: none;
 }
 
-.tabs__content {
+.page__content .tabs__content {
   order: 1;
   width: 100%;
   display: none;
 }
 
-.tabs__radio:checked + .tabs__label {
+.page__content .tabs__radio:checked + .tabs__label {
   font-weight: bold;
   color: red;
   border-bottom: 2px solid red;
 }
 
-.tabs__radio:checked + .tabs__label + .tabs__content {
+.page__content .tabs__radio:checked + .tabs__label + .tabs__content {
   display: initial;
 }
