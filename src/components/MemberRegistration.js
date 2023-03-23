@@ -41,9 +41,15 @@ function MemberRegistration()  {
                 </div>
               </div>
               <div className='content check__content'>
-                <input type="checkbox" name="hobies" value="Travel" onChange={handleChange}/> <span>Travel</span>
-                <input type="checkbox" name="hobies" value="Photography" onChange={handleChange}/> <span>Photography</span>
-                <input type="checkbox" name="hobies" value="Cinema" onChange={handleChange}/> <span>Cinema</span>
+                <div className='check'>
+                  <input type="checkbox" name="hobies" value="Travel" onChange={handleChange}/> <span>Travel</span>
+                </div>
+                <div className='check'>
+                  <input type="checkbox" name="hobies" value="Photography" onChange={handleChange}/> <span>Photography</span>
+                </div>
+                <div className='check'>
+                  <input type="checkbox" name="hobies" value="Cinema" onChange={handleChange}/> <span>Cinema</span>
+                </div>
               </div>
               <div className='content select__content'>
                 <select name='country' value={values.country} onChange={handleChange}>
@@ -56,7 +62,7 @@ function MemberRegistration()  {
                 </select>
               </div>
               <div className='button__content'>
-                <button type="submit">Submit</button>
+                <button className='btn btn-success' type="submit">Submit</button>
               </div>
               <code>{JSON.stringify(values)}</code>
             </form>

@@ -44,7 +44,7 @@ html, body {
   margin-bottom: 20px;
 }
 
-.member__registration .content input {
+.member__registration .content input, select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -63,12 +63,34 @@ html, body {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .member__registration .radio__content .radio {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.member__registration .check__content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.member__registration .check__content .check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.member__registration .button__content {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .member__registration code {
@@ -106,8 +128,8 @@ html, body {
 
 .page__content .tabs__radio:checked + .tabs__label {
   font-weight: bold;
-  color: red;
-  border-bottom: 2px solid red;
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
 }
 
 .page__content .tabs__radio:checked + .tabs__label + .tabs__content {
